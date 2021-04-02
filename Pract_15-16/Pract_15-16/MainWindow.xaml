@@ -1,0 +1,24 @@
+﻿<Window x:Class="Pract_15_16.MainWindow" x:Name="Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract_15_16"
+        mc:Ignorable="d"
+        Title="Поиск вакансий" Height="600" Width="1160" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="677*"/>
+            <ColumnDefinition Width="84*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="118*"/>
+            <RowDefinition Height="503*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Name="Vacancies" Margin="346,82,285.333,0" Height="22" SelectionChanged="ChoiceVacancy" Grid.Column="1"/>
+        <TextBlock Margin="346,34,285.333,51.667" Text="Выберите вакансию из списка" FontSize="20" Grid.Column="1"/>
+        <Frame Name="MainFrame" Grid.Row="1" Grid.Column="1" NavigationUIVisibility="Hidden" />
+        <Button Content="Подробнее" Width="95" Height="26" Grid.Column="1" Margin="677,78,145.333,0" Click="OpenInfo"/>
+    </Grid>
+</Window>
